@@ -139,8 +139,28 @@ z-index: -10;
 
 .collapses{
 }
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+@keyframes moveRight {
+    0% {
+      transform: translateX(-30%);
+    }
+    50% {
+        transform: translateX(30%);
+      }
+    100% {
+      transform: translateX(0%);
+    }
+  }
 .illustration{
     z-index: 999;
+    animation: moveRight 7s linear , fadeIn 4s ease-in-out;;
 }
 
 
@@ -527,7 +547,7 @@ span.line{
     right: 40px;
 }
 .intro3{
-    font-weight: lighter;
+    font-weight: light;
     color: rgb(83, 80, 80);
     margin: 10px 0px;
     font-size: 14px;
