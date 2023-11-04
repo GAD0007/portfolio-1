@@ -149,19 +149,32 @@ z-index: -10;
   }
 @keyframes moveRight {
     0% {
-      transform: translateX(-30%);
+      transform: translateX(-5%);
     }
     50% {
         transform: translateX(30%);
       }
     100% {
-      transform: translateX(0%);
+      transform: translateX(-5%);
     }
   }
+  /* @keyframes moveRight2 {
+    0% {
+      transform: translateX(-50%);
+    }
+   
+    100% {
+      transform: translateX(250%);
+    }
+  } */
 .illustration{
     z-index: 999;
-    animation: moveRight 7s linear , fadeIn 4s ease-in-out;;
+    animation: moveRight 7s linear infinite , fadeIn 4s ease-in-out;;
 }
+/* .illustration6{
+    z-index: 999;
+    animation: moveRight2 10s linear infinite , fadeIn 4s ease-in-out;;
+} */
 
 
 .talk{   
@@ -529,7 +542,7 @@ span.line{
 
 }
 .intro2{
-    font-size: 48px;
+    font-size: 40px;
     line-height: 50px;
     font-weight:600;
     font-family: 'Times New Roman', Times, serif;
@@ -1201,6 +1214,11 @@ select {
 }
 
 @media screen and (max-width: 991px) {
+    .main-page{
+        padding-left: 5vw;
+        padding-right: 2vw;
+    }
+    
     section.A{ 
         height: auto;
         padding-top: 0px;
